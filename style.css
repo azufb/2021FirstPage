@@ -15,6 +15,7 @@ body {
     transform: translate(-50%,-50%);
     font-family: 'Playfair Display SC', serif;
     font-size: 120px;
+    animation: anim 1s forwards;
 }
 
 .key .p2 {
@@ -24,6 +25,7 @@ body {
     transform: translate(-50%,-50%);
     font-family: 'Playfair Display SC', serif;
     font-size: 120px;
+    animation: anim 1s forwards;
 }
 
 .key .p3 {
@@ -33,6 +35,27 @@ body {
     transform: translate(-50%,-50%);
     font-family: 'Playfair Display SC', serif;
     font-size: 120px;
+    animation: anim 1s forwards;
+}
+
+.key .flash {
+    animation: flash1 1s 3;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(-50%,-50%);
+    }
+}
+
+@keyframes flash1 {
+    50% {
+        opacity: 0;
+    }
 }
 
 .contents h1 {
